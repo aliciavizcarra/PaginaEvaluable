@@ -31,20 +31,111 @@ header{
     justify-content: center;
 }
 
-section{
+.firstSection{
     border: 2px #000000 dashed ;
     margin-left: auto;
     margin-right: auto;
-    height: 334px;
-    width: 370px;
+    width: 60vw;
+    height: 35vh;
 }
 
 .addImg{
-    margin: 3cm;
+    margin: 2cm;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
 }
 
-.addImg>img{
-    width: 89px;
-    height: 96px;
-    padding: 20px;
+/*Asi se ajusta una imagen dentro de un contendor*/
+
+.colores{
+    width:60px;
 }
+
+.colores>img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.camiseta{
+    width: 130px;
+}
+
+.camiseta>img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+}
+
+.secondSection{
+    margin-left: auto;
+    margin-right: auto;
+    width: 60vw;
+    height: 15vh;
+}
+
+.thirdSection{
+    margin-left: auto;
+    margin-right: auto;
+    width: 60vw;
+    height: 35vh;
+}
+
+form{
+    fill: #E0E0E0;
+    stroke-width: 1px;
+    stroke: #000;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+form input[type="text"]{
+    font-family: Raleway;
+    background-color: #E0E0E0;
+    padding-left: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    width: 97%;
+}
+
+form ::placeholder{
+    color: #000;
+    opacity:1;
+}
+
+.selector{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:35px
+}
+
+form input[type="Submit"]{
+    font-family: New Rocker;
+    background-color: #D1181D;
+    color: #FFF;
+    stroke-width: 1px;
+    stroke: #000;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    width: 200px;
+    height: 33px;
+    font-size:x-large;
+    border-radius: 0.2cm;
+}
+
+@media only screen and (min-width:700px){
+    body{
+        background-color: aquamarine;
+    }
+    
+}
+
