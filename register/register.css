@@ -26,7 +26,7 @@ header{
     margin: 10%;
 }
 
-header>img{
+header>img[alt="usuario"]{
     width: 60px;
     padding: 10px;
 }
@@ -35,21 +35,109 @@ main{
     display: flex;
     flex-direction: column;
     align-items:center;
+
 }
 
 form{
     fill: #FFFCFC;
     stroke-width: 2px;
     stroke: #000;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    filter: drop-shadow(4px 10px 4px rgba(0, 0, 0, 0.25));
 }
 
-input{
+form input[type="text"]{
     font-family: Raleway;
-    background-color: #E0E0E0;
+    background-color: #ffffff;
     padding-left: 5px;
     padding-top: 2px;
     padding-bottom: 2px;
     width: 97%;
-    border:;
+    height: 2.5vh;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
+
+input::placeholder{
+    padding: 3%;
+    
+}
+
+form input[type="Submit"]{
+    font-family: New Rocker;
+    background-color: #000000;
+    color: #FFF;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    width: 300px;
+    height: 40px;
+    font-size:large;
+    padding: 2%;
+    
+}
+
+@media only screen and (min-width:700px){
+
+    .formulario>form{
+
+        display:grid;
+        grid-template-areas:
+                "nombre apellidos"
+                "email  email"
+                "password telefono";
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap:10%;
+ 
+    }
+
+    form input[name="Nombre"]{
+        grid-area: nombre;
+    }
+
+    form input[name="Apellidos"]{
+        grid-area: apellidos;
+    }
+
+    form input[name="Email"]{
+        grid-area: email;
+    }
+
+    form input[name="Password"]{
+        grid-area: password;
+    }
+
+    form input[name="Telefono"]{
+        grid-area: telefono;
+    }
+
+    
+    h1{
+        font-size: 70px;
+    }
+    
+    header{
+        margin: 5%;
+    }
+
+
+
+    
+
+    
+
+    
+   
+
+
+
+
+
+    
+
+
+
+
+
+
+
+}
+
