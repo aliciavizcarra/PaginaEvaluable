@@ -36,7 +36,7 @@ header>img{
 }
 
 .candado{
-    z-index: 3;
+    z-index: 2;
     position: relative;
     bottom: 175px;
     padding-left: 230px;
@@ -45,19 +45,52 @@ header>img{
 
 .candado>img{
     width: 50px;
-
 }
 
 .usuario{
     z-index: 3;
     position: relative;
     padding-left: 10px;
+    bottom: 52px;
 
 }
 
 form input[name="username"]{
     padding-left: 1.5cm;
 }
+
+
+label{
+    color: rgba(255, 255, 255, 0.83);
+    font-family: Shippori Antique B1;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.Casilla{
+     margin-left: 12px;
+}
+
+.Boton{
+    margin-top: 10%;
+    margin-left: 20%;
+
+}
+
+button{
+    color: white;
+    font-family: New Rocker;
+    border: 1px solid #000;
+    background: #76161D;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.42) inset;
+    width: 200px;
+    height: 35px;
+    font-size: large;
+    padding: 2%;
+
+    }
 
 form input[name="password"]{
     padding-left: 3.5cm;
@@ -68,6 +101,46 @@ form input[name="password"]{
     height: 20%;
 }
 
+.enlaces{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+    gap:7px;
+    font-family: Signika;
+    font-size: 12px;
+    margin-left: 10%;
+}
+
+a{
+    color: white;
+
+}
+
+.newMember{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+}
+
+.newMember>p{
+    margin: 0;
+    color: white;
+}
+
+.registro{
+    color: #E01726;;
+}
+
+
+@media only screen and (min-width:700px){
+
+    body{
+        margin-top: 10%;
+    }
+
+
+}
 
 
 

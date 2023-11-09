@@ -1,0 +1,27 @@
+body{
+    flex-wrap: nowrap;
+    display:flex;
+    flex-direction: column;
+    background: var(--fondo, linear-gradient(180deg, #0E0C0C 13.46%, rgba(115, 15, 15, 0.86) 37.72%, rgba(120, 15, 15, 0.85) 37.73%, rgba(181, 14, 14, 0.64) 72.9%, rgba(234, 4, 4, 0.38) 100%));
+}
+
+.cabecera{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.cabecera img{
+    width: 30px;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: space-between;
+    font-family: Odor Mean Chey;
+}
+
+
