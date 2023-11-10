@@ -36,7 +36,7 @@ header>img{
 }
 
 .candado{
-    z-index: 2;
+    z-index: 3;
     position: relative;
     bottom: 175px;
     padding-left: 230px;

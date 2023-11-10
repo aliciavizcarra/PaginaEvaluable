@@ -10,18 +10,111 @@ body{
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
+    align-items: center;
 }
 
-.cabecera img{
-    width: 30px;
+.iconos{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 50px;
 }
+
 
 nav{
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     color: white;
-    justify-content: space-between;
+    justify-content: space-around;
     font-family: Odor Mean Chey;
+}
+
+#Logo_Oficial{
+    width: 110px;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+#search{
+    width: 70%;
+    height: 22px;
+    border-radius: 0.5cm; 
+    z-index: 1;
+    position: relative;
+    margin: auto;
+
+}
+
+#lupa{
+    z-index: 2;
+    position: relative;
+    right: 3%;
+    width: 30px;
+    
+}
+
+#flecha{
+    padding-top: 16px;
+    width: 46.978px;
+    height: 30px;
+}
+
+main>h1{
+    color: white;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.camisetas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:100px;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #000;
+    background: rgba(255, 255, 255, 0.71);
+    margin-left: 20px;
+    margin-right: 0;
+    width: 100vw;
+}
+
+.foto{
+    border: 3px solid #000;
+    margin: 20px 30px 20px;
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    gap:20px;
+    align-items: center;
+}
+
+#colores{
+    width: 75px;
+    padding-right: 10px;
+}
+
+
+
+
+
+@media only screen and (max-width:800px){
+
+
+  
+ 
+
 }
 
 
