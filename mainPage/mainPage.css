@@ -267,6 +267,10 @@ footer{
         width: 40px;
     }
 
+    .log>a>img{
+        width: 150px;
+        margin-left: 50px;
+    }
 }
 
 
