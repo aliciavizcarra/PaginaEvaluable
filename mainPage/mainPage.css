@@ -3,7 +3,7 @@ body{
     flex-wrap: nowrap;
     display:flex;
     flex-direction: column;
-    background: var(--fondo, linear-gradient(180deg, #0E0C0C 13.46%, rgba(115, 15, 15, 0.86) 37.72%, rgba(120, 15, 15, 0.85) 37.73%, rgba(181, 14, 14, 0.64) 72.9%, rgba(234, 4, 4, 0.38) 100%));
+    background: var(--fondo, linear-gradient(180deg, #0E0C0C 13.46%, #730f0fdb 37.72%, rgba(120, 15, 15, 0.85) 37.73%, rgba(181, 14, 14, 0.64) 72.9%, rgba(234, 4, 4, 0.38) 100%));
 }
 
 .cabecera{
@@ -116,6 +116,7 @@ main{
     padding-right: 10px;
 }
 
+<<<<<<< HEAD
 .etiquetas{
     color: white;
     background-color: black;
@@ -124,6 +125,10 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;   
+=======
+.rss>img{
+    mix-blend-mode: overlay;
+>>>>>>> 4b45dd2a9b26aa98d816191e59a35cfa65a3e006
 }
 
 /*Selector Descendiente*/

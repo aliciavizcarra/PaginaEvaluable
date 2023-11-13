@@ -13,12 +13,12 @@ header>img{
     z-index: 1;
 }
 
-.formulario>form{
+form{
     padding-top: 14px;
     padding-left: 12px;
 }
 
-.formulario>form>input{
+form>input{
     border-radius:50px;
     background-color: #D9D9D9;
     height: 25px;
@@ -31,18 +31,15 @@ header>img{
 }
 
 
-.usuario>img{
+.candado>img{
     width: 50px;
-}
-
-.candado{
     z-index: 3;
     position: relative;
-    bottom: 175px;
-    padding-left: 230px;
-    width: 20px;
+    left: 82%;
+    bottom: 60px;
 }
 
+<<<<<<< HEAD
 .candado>img{
     width: 50px;
 }
@@ -50,11 +47,18 @@ header>img{
 /*Selector de varias clases a un elemento, aqui .usuario y .candado hacen referencia a dos divs*/
 
 .usuario{
+=======
+.usuario>img{
+>>>>>>> 4b45dd2a9b26aa98d816191e59a35cfa65a3e006
     z-index: 3;
     position: relative;
     padding-left: 10px;
     bottom: 52px;
+    width: 50px;
+}
 
+.usuario{
+    height: 80px;
 }
 
 form input[name="username"]{
