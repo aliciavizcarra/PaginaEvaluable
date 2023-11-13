@@ -1,4 +1,5 @@
 body{
+    height: 100vh;
     flex-wrap: nowrap;
     display:flex;
     flex-direction: column;
@@ -57,14 +58,24 @@ nav{
     
 }
 
+/*Selector por ID*/
 #flecha{
     padding-top: 16px;
     width: 46.978px;
     height: 30px;
 }
 
+/*Selector hijo*/
 main>h1{
     color: white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: New Rocker;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.4px; 
+    margin-left: 3%;
 }
 
 main{
@@ -86,7 +97,7 @@ main{
     background: rgba(255, 255, 255, 0.71);
     margin-left: 20px;
     margin-right: 0;
-    width: 100vw;
+    width: 30%;
 }
 
 .foto{
@@ -105,16 +116,94 @@ main{
     padding-right: 10px;
 }
 
+.etiquetas{
+    color: white;
+    background-color: black;
+    margin: 20px 20px 10px 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+/*Selector Descendiente*/
+.etiquetas p{
+    margin: 0;
+    padding: 1px;
+    font-size:large;
+    font-family:nats;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    font-family: Orelega One;
+    color: white;
+}
+
+#title{
+    font-size: 14px;
+    margin: 0;
+}
+
+
+/*Selector adyacente*/
+.telefono>img + p{
+    font-size: xx-small;
+}
+
+.gmail{
+    font-size:xx-small;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.deslizar{
+    display: none;
+}
 
 
 
 
-@media only screen and (max-width:800px){
 
+@media only screen and (max-width:700px){
+
+   #desaparecer{
+    display: none;
+   }
+
+   .contenedor{
+    width: 60%;
+    margin-left: 20%;
+   }
+
+   .deslizar{
+    display: flex;
+    background-color: #EBCCCC;
+    width: 8%;
+    align-items: center;
+    height: 35%;
+   }
+
+    .camisetas{
+        align-items: center;
+        gap: 0px;
+    }
+
+
+}
+
+
+   
 
   
  
 
-}
+
 
 

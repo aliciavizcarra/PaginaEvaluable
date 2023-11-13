@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main Page</title>
     <link rel="stylesheet" href="mainPage.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=New Rocker|Raleway|Shippori Antique B1|Signika|Odor Mean Chey">
+    <link href="https://fonts.cdnfonts.com/css/nats" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=New Rocker|Raleway|Shippori Antique B1|Signika|Odor Mean Chey|NATS|Orelega One">
 </head>
 <body>
 
@@ -36,12 +37,12 @@
             <p>Extremoduro</p>
             <p>Marea</p>
             <p>Fito y los Fitipaldis</p>
-            <p>Pignoise</p>
-            <p>Robe</p>
-            <p>Mana</p>
-            <p>Mago de Oz</p>
-            <p>Melendi</p>
-            <p>Ska-P</p>
+            <p id="desaparecer" >Pignoise</p>
+            <p id="desaparecer">Robe</p>
+            <p id="desaparecer">Mana</p>
+            <p id="desaparecer">Mago de Oz</p>
+            <p id="desaparecer">Melendi</p>
+            <p id="desaparecer">Ska-P</p>
 
             <img src="/imagenes/FlechaNav.png" id="flecha">
         </nav>
@@ -61,37 +62,43 @@
                     <img src="/imagenes/camisetas/ColoresDisponibles.png" id="colores">
                 </div>
 
-                <div>
+                <div class="etiquetas">
                     <p>Camiseta Fito y Fitipaldis</p>
                     <p>18,99</p>
                 </div>
 
             </div>
 
-            <div class="contenedor">
+            <div class="contenedor" id="desaparecer">
 
-                <div class="foto">
+                <div class="foto" >
                     <img src="/imagenes/camisetas/C062-extremoduro-1530808670 1.png" alt="">
                     <img src="/imagenes/camisetas/ColoresDisponibles.png"  id="colores">
                 </div>
 
-                <div>
+                <div class="etiquetas">
                     <p>Camiseta Extremoduro</p>
                     <p>18,99</p>
                 </div>
 
             </div>
 
-            <div class="contenedor">
+            <div class="contenedor" id="desaparecer" >
 
                 <div class="foto">
                     <img src="/imagenes/camisetas/camiseta-marea 1.png" alt="">
                     <img src="/imagenes/camisetas/ColoresDisponibles.png" id="colores">
                 </div>
 
-                <div>
+                <div class="etiquetas">
                     <p>Camiseta</p>
                 </div>
+
+            </div>
+
+            <div class="deslizar">
+
+                <p>></p>
 
             </div>
 
@@ -107,13 +114,13 @@
     <footer>
 
         <div class="rss">
-            <p>Follow us:</p>
+            <p id="title">Follow us:</p>
             <img src="/imagenes/Redes Sociales.png" alt="">
         </div>
 
         <div class="contact">
 
-            <p>Contact</p>
+            <p id="title">Contact:</p>
 
             <div class="gmail">     
                 <img src="/imagenes/gmailIcon.png" alt="">

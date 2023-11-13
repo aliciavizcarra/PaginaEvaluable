@@ -47,6 +47,8 @@ header>img{
     width: 50px;
 }
 
+/*Selector de varias clases a un elemento, aqui .usuario y .candado hacen referencia a dos divs*/
+
 .usuario{
     z-index: 3;
     position: relative;
