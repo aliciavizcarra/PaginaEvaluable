@@ -39,17 +39,12 @@ form>input{
     bottom: 60px;
 }
 
-<<<<<<< HEAD
 .candado>img{
     width: 50px;
 }
 
 /*Selector de varias clases a un elemento, aqui .usuario y .candado hacen referencia a dos divs*/
-
-.usuario{
-=======
 .usuario>img{
->>>>>>> 4b45dd2a9b26aa98d816191e59a35cfa65a3e006
     z-index: 3;
     position: relative;
     padding-left: 10px;
