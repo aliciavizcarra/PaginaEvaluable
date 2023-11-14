@@ -132,6 +132,7 @@ ul{
     align-items: center;
 }
 
+
 #colores{
     width: 75px;
     padding-right: 10px;
@@ -276,6 +277,16 @@ footer{
         margin-left: 50px;
     }
 }
+
+@media print {
+    
+    body{
+
+        color: black;
+        background-color: white;
+    }
+
+}  
 
 
    

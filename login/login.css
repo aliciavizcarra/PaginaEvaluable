@@ -139,9 +139,16 @@ a{
     body{
         margin-top: 10%;
     }
-
-
 }
+
+@media print {
+    
+    body{
+        color: black;
+        background-color: white;
+    }
+}  
+
 
 
 

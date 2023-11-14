@@ -15,7 +15,7 @@ h1{
     font-family: New Rocker;
     font-size: 50px;
     font-style: normal;
-    font-weight: 00;
+    font-weight: 0;
     line-height:normal;
     -webkit-text-stroke: 1px #000000; 
 }
@@ -51,8 +51,6 @@ header{
     justify-content: center;
     gap: 50px;
 }
-
-/*Asi se ajusta una imagen dentro de un contendor*/
 
 .colores{
     width:60px;
@@ -148,7 +146,7 @@ form input[type="Submit"]{
     }
 
     header{
-        margin: none;
+        margin: 0;
     }
 
     main{ 
@@ -181,4 +179,14 @@ form input[type="Submit"]{
     }
 
 }
+
+@media print {
+    
+    body{
+
+        color: black;
+        background-color: white;
+    }
+
+}  
 
