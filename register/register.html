@@ -17,17 +17,17 @@
     <main>
         <section class="formulario">
             <form>
-                <input type="text" name="Nombre" placeholder="First Name*"><br><br>
-                <input type="text" name="Apellidos" placeholder="Last Name*"><br><br>
-                <input type="text" name="Email" placeholder="Email Address*"><br><br>
-                <input type="text" name="Password" placeholder="Default Password"><br><br>
-                <input type="text" name="Telefono" placeholder="Phone Number"><br><br><br>
+                <input type="text" name="Nombre" placeholder="First Name*" required maxlength="20"><br><br>
+                <input type="text" name="Apellidos" placeholder="Last Name*" required><br><br>
+                <input type="text" name="Email" placeholder="Email Address*" required><br><br>
+                <input type="password" name="Password" placeholder="Default Password" required pattern="^[^^.,:`¨;''\$]+"><br><br>
+                <input type="text" name="Telefono" placeholder="Phone Number" required pattern="^[6-7]\d{8}"><br><br><br>
             </form>
         </section>
 
         <section class="Boton">
             <div class="Enviar">
-                <form>
+                <form action="/mainPage/mainPage.html">
                     <input type="Submit" value="REGISTER NEW USER">
                 </form>
             </div>

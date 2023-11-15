@@ -21,7 +21,7 @@
                 <img src="/imagenes/User.png" alt="usuario">
 
                 <form>
-                    <input type="text" name="username" placeholder="Username">
+                    <input type="text" name="username" placeholder="Username" maxlength="30" required>
                 </form>
             </div>
             
@@ -30,7 +30,7 @@
                 <img src="/imagenes/Lockdown.png" alt="">
                 
                 <form>
-                    <input type="text" name="password" placeholder="Password">
+                    <input type="password" name="password" placeholder="Password" minlength="8" required pattern="^[^^.,:`¨;''\$]+">
                 </form>
             </div>
             
@@ -43,7 +43,7 @@
         </section>
 
         <section class="Boton">
-            <form>
+            <form action="/mainPage/mainPage.html">
                 <button>LOGIN</button>
             </form>
         </section>

@@ -122,12 +122,3 @@ form input[type="Submit"]{
     }
 }
 
-@media print {
-    
-    body{
-
-        color: black;
-        background-color: white;
-    }
-
-}  

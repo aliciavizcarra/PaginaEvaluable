@@ -167,6 +167,7 @@ footer{
     gap: 80px;
     font-family: Orelega One;
     color: white;
+    margin-top: 6%;
 }
 
 #title{
@@ -217,13 +218,6 @@ li:hover{
 .deslizar{
     display: none;
 }
-
-
-footer{
-    margin-top: 4%;
-}
-
-
 
 
 @media only screen and (max-width:1000px){

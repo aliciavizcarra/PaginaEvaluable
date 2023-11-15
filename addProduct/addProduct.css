@@ -34,11 +34,11 @@ header{
 }
 
 /*Selector de clase dentro de un tipo concreto, dentro de section, la clase firstSection*/
-.firstSection{
+section.firstSection{
     border: 2px #000000 dashed ;
     margin-left: auto;
     margin-right: auto;
-    width: 60vw;
+    width: 60%;
     height: 35vh;
 }
 
@@ -80,7 +80,7 @@ main{
 .secondSection{
     margin-left: auto;
     margin-right: auto;
-    width: 60vw;
+    width: 60%;
     height: 35vh;
 }
 
@@ -179,13 +179,5 @@ form input[type="Submit"]{
 
 }
 
-@media print {
-    
-    body{
 
-        color: black;
-        background-color: white;
-    }
-
-}  
 

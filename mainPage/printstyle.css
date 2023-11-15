@@ -1,0 +1,14 @@
+
+nav{
+    visibility: hidden;
+}
+
+.iconos{
+    display: none;
+}
+
+/*Selector de agrupoaciones de tipos*/
+
+.cabecera>input,img{
+    display: none;
+}
