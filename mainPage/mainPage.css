@@ -270,6 +270,10 @@ li:hover{
         width: 150px;
         margin-left: 50px;
     }
+
+    #search{
+        width: 120px;
+    }
 }
 
 @media print {
