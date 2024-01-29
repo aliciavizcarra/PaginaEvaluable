@@ -1,9 +1,9 @@
 body{
-    height: 100vh;
     flex-wrap: nowrap;
     display:flex;
     flex-direction: column;
     background: var(--fondo, linear-gradient(180deg, #0E0C0C 13.46%, #730f0fdb 37.72%, rgba(120, 15, 15, 0.85) 37.73%, rgba(181, 14, 14, 0.64) 72.9%, rgba(234, 4, 4, 0.38) 100%));
+    background-repeat: no-repeat;
 }
 
 .cabecera{
@@ -269,6 +269,10 @@ li:hover{
     .log>a>img{
         width: 150px;
         margin-left: 50px;
+    }
+
+    #search{
+        width: 120px;
     }
 }
 

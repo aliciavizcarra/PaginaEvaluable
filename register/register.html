@@ -6,6 +6,7 @@
     <title>Registro</title>
     <link rel="stylesheet" href="register.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=New Rocker|Raleway">
+    <script src="register.js"></script>
 </head>
 <body>
 
@@ -14,26 +15,34 @@
         <h1>REGISTER</h1>
     </header>
 
-    <main>
-        <section class="formulario">
-            <form>
-                <input type="text" name="Nombre" placeholder="First Name*" required maxlength="20"><br><br>
-                <input type="text" name="Apellidos" placeholder="Last Name*" required><br><br>
-                <input type="text" name="Email" placeholder="Email Address*" required><br><br>
-                <input type="password" name="Password" placeholder="Default Password" required pattern="^[^^.,:`¨;''\$]+"><br><br>
-                <input type="text" name="Telefono" placeholder="Phone Number" required pattern="^[6-7]\d{8}"><br><br><br>
-            </form>
-        </section>
+    <form id="formulario">
+        <div>
+            <input type="text" name="name" placeholder="Nombre*" id="nombre">
+            <span id="errorNombre" class="mensajeError"></span>
+        </div>
 
-        <section class="Boton">
-            <div class="Enviar">
-                <form action="/mainPage/mainPage.html">
-                    <input type="Submit" value="REGISTER NEW USER">
-                </form>
-            </div>
-        </section>
+        <div>
+            <input type="text" name="username" placeholder="Username*" id="username">
+            <span id="errorUsername" class="mensajeError"></span>
+        </div>
 
-    </main>
+        <div>
+            <input type="text" name="email" placeholder="Email*" id="email">
+            <span id="errorEmail" class="mensajeError"></span>
+        </div>
+
+        <div>
+            <input type="password" name="password" placeholder="Password" id="password">
+            <span id="errorPassword" class="mensajeError"></span>
+        </div>
+
+        <input type="Submit" value="REGISTER NEW USER">
+        <p id="errorForm" class="mensajeError"></p>
+    </form>
+
+</body>
+
+</html>
     
 </body>
 </html>

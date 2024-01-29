@@ -1,5 +1,5 @@
 body{
-    margin-top: 30%;
+    margin-top: 10%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,8 +14,12 @@ header>img{
 }
 
 form{
-    padding-top: 14px;
-    padding-left: 12px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    z-index: 2;
+    position: relative;
+    bottom: 35px;
 }
 
 form>input{
@@ -25,41 +29,11 @@ form>input{
     width: 200px;
     padding: 3px 8px 4px;
     font-family: Raleway;
-    z-index: 2;
-    position: relative;
-    bottom: 120px;
 }
 
-
-.candado>img{
-    width: 50px;
-    z-index: 3;
-    position: relative;
-    left: 82%;
-    bottom: 60px;
+p{
+    padding-left: 17%;
 }
-
-.candado>img{
-    width: 50px;
-}
-
-/*Selector de varias clases a un elemento, aqui .usuario y .candado hacen referencia a dos divs*/
-.usuario>img{
-    z-index: 3;
-    position: relative;
-    padding-left: 10px;
-    bottom: 52px;
-    width: 50px;
-}
-
-.usuario{
-    height: 80px;
-}
-
-form input[name="username"]{
-    padding-left: 1.5cm;
-}
-
 
 label{
     color: rgba(255, 255, 255, 0.83);
@@ -68,16 +42,6 @@ label{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-}
-
-.Casilla{
-     margin-left: 12px;
-}
-
-.Boton{
-    margin-top: 10%;
-    margin-left: 20%;
-
 }
 
 button{
@@ -90,58 +54,9 @@ button{
     height: 35px;
     font-size: large;
     padding: 2%;
-
-    }
-
-form input[name="password"]{
-    padding-left: 3.5cm;
-    width: 120px;
-}
-
-.formulario{
-    height: 20%;
-}
-
-.enlaces{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     margin-top: 10%;
-    gap:7px;
-    font-family: Signika;
-    font-size: 12px;
     margin-left: 10%;
 }
-
-a{
-    color: white;
-
-}
-
-.newMember{
-    display: flex;
-    flex-direction: row;
-    gap:10px;
-}
-
-.newMember>p{
-    margin: 0;
-    color: white;
-}
-
-.registro{
-    color: #E01726;;
-}
-
-
-@media only screen and (min-width:700px){
-
-    body{
-        margin-top: 10%;
-    }
-}
-
-
 
 
 
