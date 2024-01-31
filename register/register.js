@@ -105,8 +105,6 @@ function validarNombre() {
 
 function enviarFormulario(e){
 
-    e.preventDefault();
-
     let formulario = document.getElementById("formulario");
     console.log(formulario);
     
@@ -135,10 +133,6 @@ function enviarFormulario(e){
         }else{
             throw new Error (response.status)
         }
-    })
-    .then(data => {
-        console.log(data);
-        e.target.submit();
     })
     .catch(error => {
         console.error(error);

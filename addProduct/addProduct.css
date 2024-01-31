@@ -124,7 +124,7 @@ form ::placeholder{
     gap:35px
 }
 
-form input[type="Submit"]{
+#boton{
     font-family: New Rocker;
     background-color: #D1181D;
     color: #FFF;

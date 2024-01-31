@@ -6,6 +6,7 @@
     <title>Add Product</title>
     <link rel="stylesheet" href="addProduct.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=New Rocker|Raleway">
+    <script src="addProduct.js"></script>
 </head>
 <body>
     <header>
@@ -34,12 +35,11 @@
         <section class="secondSection">
 
             <div class="formulario">
-                <form>
-                    <input type="text" name="ID" placeholder="ID"><br><br>
-                    <input type="text" name="Nombre" placeholder="Name"><br><br>
-                    <input type="text" name="Precio" placeholder="Price"><br><br>
-                    <input type="text" name="Grupo" placeholder="Group"><br><br>
-                </form>
+                <form id="formulario">
+                    <input type="text" name="nombre" placeholder="Name"><br><br>
+                    <input type="text" name="precio" placeholder="Price"><br><br>
+                    <input type="text" name="grupo" placeholder="Group"><br><br>
+                    <input type="text" name="imagensrc" placeholder="ImagenSrc"><br><br>
             </div>
 
             <div class="selector">
@@ -58,8 +58,7 @@
         <section class="thirdSection">
 
             <div class="Enviar">
-                <form action="/mainPage/mainPage.html">
-                    <input type="Submit" value="ADD">
+                    <input type="Submit" value="ADD" id="boton">
                 </form>
             </div>
     
