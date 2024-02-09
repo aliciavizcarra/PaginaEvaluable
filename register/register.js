@@ -136,7 +136,7 @@ function enviarFormulario(e){
     .then(response=>{
         if(response.ok){
             console.log("Usuario guardado con exito")
-            formulario.reset();
+            window.location.href = "/mainPage/mainPage.html";
             return response.json();
         }else{
             throw new Error (response.status)
