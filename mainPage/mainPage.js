@@ -47,9 +47,18 @@ function pintarCamisetas(camsietas){
         const parrafo2 = document.createElement("p");
         parrafo2.innerText=camiseta.precio
 
+        const botonEliminar = document.createElement("button");
+        botonEliminar.innerText="Eliminar Camiseta"
+        botonEliminar.addEventListener("click", eliminarCamiseta)
+
         contenedorPrincipal.append(divContenedor);
-        divContenedor.append(divImagen,etiquetas);
+        divContenedor.append(divImagen,etiquetas, botonEliminar);
         divImagen.append(imagen);
-        etiquetas.append(parrafo1,parrafo2)
+        etiquetas.append(parrafo1,parrafo2);
     })
+}
+
+
+function eliminarCamiseta(){
+
 }

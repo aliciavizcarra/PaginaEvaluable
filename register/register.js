@@ -15,6 +15,7 @@ function validarNombre() {
     if (nombreInput.value.trim() === "") {
         nombreError.innerText = "El nombre no puede estar vacío";
         nombreInput.classList.add("error")
+        nombreError.focus();
         return false;
     } else {
         nombreError.innerText = "";
@@ -29,9 +30,11 @@ function validarNombre() {
 
     if (usernameInput.value.trim() === "") {
       usernameError.innerText = "El nombre de usuario no puede estar vacío";
+      usernameError.focus();
       return false;
     } else if (usernameInput.value.length < 5) {
       usernameError.innerText = "El nombre de usuario debe tener al menos 5 caracteres";
+      usernameError.focus();
       return false;
     } else {
       usernameError.innerText = "";
@@ -47,9 +50,11 @@ function validarNombre() {
 
     if (emailInput.value.trim() === "") {
       emailError.innerText = "El correo electrónico no puede estar vacío";
+      emailError.focus();
       return false;
     } else if (!patron.test(emailInput.value)) {
       emailError.innerText = "Ingrese un correo electrónico válido";
+      emailError.focus();
       return false;
     } else {
       emailError.innerText = "";
@@ -64,12 +69,15 @@ function validarNombre() {
 
     if (passwordInput.value.length < 8) {
       passwordError.innerText = "La contraseña debe tener al menos 8 caracteres";
+      passwordError.focus();
       return false;
     } else if (!/[a-zA-Z]/.test(passwordInput.value)) {
       passwordError.innerText = "La contraseña debe contener al menos una letra";
+      passwordError.focus();
       return false;
     } else if (!/\d/.test(passwordInput.value)) {
       passwordError.innerText = "La contraseña debe contener al menos un número";
+      passwordError.focus();
       return false;
     } else {
       passwordError.innerText = "";
