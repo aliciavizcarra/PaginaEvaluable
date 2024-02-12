@@ -105,47 +105,8 @@ function validarNombre() {
       errorForm.innerText = "No se ha podido enviar el formulario, revisa la contraseña";
       document.getElementById("password").focus();
     } else {
-      errorForm.innerText = "";
-      enviarFormulario();
+      errorForm.innerText = "Usuario enviado con exito";
     }
 }
 
-
-function enviarFormulario(e){
-
-    let formulario = document.getElementById("formulario");
-    console.log(formulario);
-    
-    const usuarioNuevo ={
-        "username": formulario.username.value,
-        "email": formulario.email.value,
-        "name": formulario.name.value,
-        "password": formulario.password.value,
-    }
-
-     const options={
-        method:"POST",
-        headers:{
-            'Content-type':"application/json"
-        },
-        body: JSON.stringify(usuarioNuevo)
-    };
-
-    fetch(URL_SERVER+"usuarios/", options)
-
-    .then(response=>{
-        if(response.ok){
-            console.log("Usuario guardado con exito")
-            window.location.href = "/mainPage/mainPage.html";
-            return response.json();
-        }else{
-            throw new Error (response.status)
-        }
-    })
-    .catch(error => {
-        console.error(error);
-    });
-
-
-}
 

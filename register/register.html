@@ -19,27 +19,27 @@
 
     <form id="formulario" action="/mainPage/mainPage.html" >
         <div>
-            <input type="text" name="name" placeholder="Nombre*" id="nombre" aria-required="true" aria-errormessage="errorNombre">
-            <span id="errorNombre" class="mensajeError" tabindex="-1"></span>
+            <input type="text" name="name" placeholder="Nombre*" id="nombre" aria-required="true" aria-errormessage="errorNombre" aria-label="Campo para escribir el nombre">
+            <span id="errorNombre" class="mensajeError" tabindex="-1" role="alert"></span>
         </div>
 
         <div>
-            <input type="text" name="username" placeholder="Username*" id="username" aria-required="true">
-            <span id="errorUsername" class="mensajeError" tabindex="-1"></span>
+            <input type="text" name="username" placeholder="Username*" id="username" aria-required="true" aria-errormessage="errorUsername" aria-label="Campo para escribir el username">
+            <span id="errorUsername" class="mensajeError" tabindex="-1" role="alert"></span>
         </div>
 
         <div>
-            <input type="text" name="email" placeholder="Email*" id="email" aria-required="true">
-            <span id="errorEmail" class="mensajeError" tabindex="-1"></span>
+            <input type="text" name="email" placeholder="Email*" id="email" aria-required="true" aria-errormessage="errorEmail" aria-label="Campo para escribir el email"> 
+            <span id="errorEmail" class="mensajeError" tabindex="-1" role="alert"></span>
         </div>
 
         <div>
-            <input type="password" name="password" placeholder="Password*" id="password" aria-required="true">
-            <span id="errorPassword" class="mensajeError" tabindex="-1"></span>
+            <input type="password" name="password" placeholder="Password*" id="password" aria-required="true" aria-errormessage="errorPassword" aria-label="Campo para escribir la contraseña">
+            <span id="errorPassword" class="mensajeError" tabindex="-1" role="alert"></span>
         </div>
 
         <input type="Submit" value="REGISTER NEW USER" aria-label ="Registrar usuario">
-        <p id="errorForm" class="mensajeError" tabindex="-1"></p>
+        <p id="errorForm" class="mensajeError" tabindex="-1" role="alert"></p>
     </form>
 
 </body>
